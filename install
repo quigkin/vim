@@ -1,0 +1,43 @@
+#!/bin/sh
+
+CWD_PATH=`pwd`
+cd ~/vim
+
+echo "Backing up..."
+if [[ -d ~/.vim ]]
+then
+  echo "Backing up ~/.vim to ~/.vim-save"
+  mv ~/.vim ~/.vim-save
+fi
+
+if [[ -f ~/.vimrc ]]
+then
+  echo "Backing up ~/.vimrc to ~/.vimrc-save"
+  mv ~/.vimrc ~/.vimrc-save
+fi
+
+if [[ -f ~/.gvimrc ]]
+then
+  echo "Backing up ~/.gvimrc to ~/.gvimrc-save"
+  mv ~/.gvimrc ~/.gvimrc-save
+fi
+
+echo "Installing..."
+
+echo "Linking ~/vim to ~/.vim"
+ln -nfs ~/vim ~/.vim
+echo "Linking ~/.vim/vimrc to ~/.vimrc"
+ln -nfs ~/.vim/vimrc ~/.vimrc
+echo "Linking ~/.vim/gvimrc to ~/.gvimrc"
+ln -nfs ~/.vim/gvimrc ~/.gvimrc
+
+echo "Cloning Vundle"
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
+echo "Installing plugins"
+vim +BundleInstall +qall
+
+cd $CWD_PATH
+
+echo "Installation complete."
+
