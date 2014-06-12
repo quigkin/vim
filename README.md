@@ -36,11 +36,11 @@ I use the excellent [Vundle](https://github.com/gmarik/Vundle.vim) plugin to kee
 
 If you are new to vim, the following notes might be helpful. 
 
-My "Leader" key is mapped to the comma key. So anywhere you see <Leader>somekey in my [keybindings file](https://github.com/quigkin/vim/blob/master/keybindings.vim), it just means press and release `,` then press somekey.
+My "Leader" key is mapped to the comma key. So anywhere you see `<Leader>somekey` in my [keybindings file](https://github.com/quigkin/vim/blob/master/keybindings.vim), it just means press and release `,` then press somekey.
 
 ### Navigating
 
-Start vim in some directory and press <Leader>N (note the uppercase n). This will open [Nerdtree](https://github.com/scrooloose/nerdtree). Press `?` to toggle help.
+Start vim in some directory and press `<Leader>N` (note the uppercase n). This will open [Nerdtree](https://github.com/scrooloose/nerdtree). Press `?` to toggle help.
 
 Use `Ctrl+[jkhl]` to shift focus between open windows.
 
