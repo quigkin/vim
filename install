@@ -7,7 +7,7 @@ echo "Backing up..."
 if [[ -d ~/.vim ]]
 then
   echo "Backing up ~/.vim to ~/.vim-save"
-  mv ~/.vim ~/.vim-save
+  cp -r ~/.vim ~/.vim-save
 fi
 
 if [[ -f ~/.vimrc ]]

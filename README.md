@@ -46,8 +46,16 @@ Use `Ctrl+[jkhl]` to shift focus between open windows.
 
 Press `Ctrl+p` to open the [ctrlp file finder](https://github.com/kien/ctrlp.vim).
 
-
-## Tip
+### Tip
 
 Since there are a lot of Ctrl key combinations, life is much better if you remap your CapsLock key to Ctrl.
+
+## Customizing
+
+Inevitably you will want to remap keys and change plugins to your liking. If so, you may want to fork this repo and update the install command above before you begin.
+
+If you cloned my repo and made changes, then go ahead and fork my repo now and then run the following command substituting your repo.
+
+    git remote set-url origin git://your.repo.here
+
 
