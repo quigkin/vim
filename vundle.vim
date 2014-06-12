@@ -31,7 +31,7 @@ Bundle 'jgdavey/vim-blockle'
 
 Bundle 'duff/vim-bufonly'
 " % to find matching block delimiter
-Bundle 'tsaleh/vim-matchit'
+Bundle 'edsono/vim-matchit'
 " Autocompletion
 Bundle 'tsaleh/vim-supertab'
 " Run specs with leader-r and leader-R
